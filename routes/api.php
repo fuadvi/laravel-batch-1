@@ -24,3 +24,5 @@ Route::controller(\App\Http\Controllers\AuthController::class)
         Route::post('login', 'login');
         Route::get('get-profile', 'getProfile')->middleware('auth:sanctum');
     });
+
+Route::apiResource('cinemas',\App\Http\Controllers\CinemasController::class)->middleware('auth:sanctum');

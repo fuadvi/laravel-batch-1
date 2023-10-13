@@ -29,6 +29,7 @@ class AuthService implements IAuthService
         {
             throw new \Exception("User atau Password Tidak di Temukan", Response::HTTP_BAD_REQUEST);
         }
+
         $token = $user->createToken('token')->plainTextToken;
 
         return [
