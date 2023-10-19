@@ -35,7 +35,7 @@ trait ResponFormater
         return $this->coreReponse($message,$data,$statusCode);
     }
 
-    public function error(string $message, int $statusCode)
+    public function error(string $message, int $statusCode= 500)
     {
         return $this->coreReponse($message,null,$statusCode,false);
     }

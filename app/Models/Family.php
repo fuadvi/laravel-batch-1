@@ -9,18 +9,6 @@ class Family extends Model
 {
     use HasFactory;
 
-//    public function getDepth()
-//    {
-//        $depth = 0;
-//        $parent = $this->parent;
-//
-//        while (!is_null($parent)) {
-//            $depth++;
-//            $parent = $parent->parent;
-//        }
-//
-//        return $depth;
-//    }
 
     public function descendants()
     {

@@ -9,6 +9,8 @@ class Screening extends Model
 {
     use HasFactory;
 
+    protected $guarded = ['id'];
+
     public function film()
     {
         return $this->belongsTo(Film::class);

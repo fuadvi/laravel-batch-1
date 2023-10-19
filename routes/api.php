@@ -26,3 +26,4 @@ Route::controller(\App\Http\Controllers\AuthController::class)
     });
 
 Route::apiResource('cinemas',\App\Http\Controllers\CinemasController::class)->middleware('auth:sanctum');
+Route::apiResource('films',\App\Http\Controllers\FilmController::class)->middleware('auth:sanctum');
